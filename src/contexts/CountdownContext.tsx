@@ -16,7 +16,7 @@ type CountdownProviderProps = {
   children: React.ReactNode;
 };
 
-const DEFAULT_INIT_TIME = 0.1 * 60;
+const DEFAULT_INIT_TIME = 25 * 60;
 let countdownTimeout: NodeJS.Timeout;
 function CountdownProvider({ children }) {
   const { startNewChallenge } = useChallenge();
